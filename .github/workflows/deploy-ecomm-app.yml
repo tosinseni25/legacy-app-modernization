@@ -1,4 +1,4 @@
-name: CI/CD Pipeline  ecommerce-app  seceret
+name: CI/CD Pipeline  ecommerce-app  
 
 on:
   push:
@@ -36,7 +36,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
       - name: Push Docker Image
         run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/ecommerce-app:latest
