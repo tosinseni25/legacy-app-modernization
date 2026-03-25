@@ -1,4 +1,4 @@
-name: CI/CD Pipeline  ecommerce-app  re-upoad
+name: CI/CD Pipeline  ecommerce-app  modifiy secret
 
 on:
   push:
