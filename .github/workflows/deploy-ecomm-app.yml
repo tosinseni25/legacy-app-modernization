@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker Image
-        run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/ecommerce-app:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/ecommerce-app:latest
 
   deploy:
     needs: build
