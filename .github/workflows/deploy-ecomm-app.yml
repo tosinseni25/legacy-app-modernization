@@ -1,4 +1,4 @@
-name: CI/CD Pipeline  ecommerce-app 
+name: CI/CD Pipeline  ecommerce-apps 
 
 on:
   push:
