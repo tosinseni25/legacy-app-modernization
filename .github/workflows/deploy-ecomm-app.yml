@@ -29,7 +29,7 @@ jobs:
 
       # Build Docker Image
       - name: Build Docker Image
-        run: docker build -f docker/Dockerfile -t ${{ secrets.DOCKER_HUB_USERNAME }}/ecommerce-app:latest .
+        run: docker build -f docker/Dockerfile -t tosinseni255/ecommerce-app:latest .
 
       # Push to DockerHub
       - name: Log in to DockerHub
